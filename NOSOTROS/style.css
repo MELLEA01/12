@@ -25,6 +25,7 @@ body{
 .navbar{
     display: flex;
     margin-right: 10px;
+    width: auto;
 }
 
 .logo{
@@ -117,6 +118,8 @@ p {
 .sau{
     padding: 40px;
     background: #1f1d1d;
+    height: auto;
+    width: auto;
 }
 
 .box-container{
@@ -125,6 +128,10 @@ p {
     flex-wrap: wrap;
     text-align: center;
 
+}
+
+.sau p{
+    text-align: justify;
 }
 
 .box-container .box{
@@ -143,8 +150,8 @@ p {
     line-height: 3rem;
     text-align: center;
     border-radius: 50%;
-    color: #FFFFFF;
-    background: #9c27b0;
+    color: #363636;
+    background: #F8E6AD;
     font-size: 2rem;
     margin: 1rem 0;
 }
@@ -162,6 +169,11 @@ p {
 .about{
     padding: 60px;
     background: #1f1d1d;
+    height: auto;
+}
+
+.about p{
+    text-align: justify;
 }
 
 .valores{
@@ -169,7 +181,8 @@ p {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    padding: 100px;
+    padding: 6rem;
+    height: auto;
     
 }
 
@@ -179,6 +192,8 @@ p {
     flex-wrap: wrap;
     text-align: center;
 }
+
+
 
 .box-container-Valores .box{
     height: 12rem;
@@ -190,21 +205,23 @@ p {
 
 }
 
-
+.box-container-Valores .box:hover{
+    transform: translate(-10px, -20px)
+}
 .box-container-Valores .box i{
     height: 2rem;
     width: 2rem;
     line-height: 2rem;
     text-align: center;
     border-radius: 50%;
-    color: black;
-    background: #FFFFFF;
+    color: #363636;
+    background: #F8E6AD;
     font-size: 1.5rem;
     margin: 1rem 0;
 
 }
 .box-container-Valores h3{
-    color: #FFFFFF;
+    color: #F8E6AD;
 
 }
 
@@ -216,7 +233,14 @@ p {
 
 
 .contact{
-    padding-top: 20px;
+    padding-top:10px;
     background: #1f1d1d;
     padding-bottom: 0;
+    padding: 10rem;
+    height: auto;
+
 } 
+
+.contact p{
+    text-align: justify;
+}

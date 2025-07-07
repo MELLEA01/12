@@ -16,7 +16,7 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background: #171717;
+    background: #030303;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -28,7 +28,7 @@ body{
 }
 
 .logo{
-    margin-left: 30px;
+    margin-left:    30px;
 }
 
 .logo a {
@@ -37,10 +37,14 @@ body{
     text-transform: uppercase;
     font-size: 20px;
 }
+.logo:hover{
+    transform: translate(0px, 10px)
+}
 
 .logo-img{
-    width: 90px; 
-    height: 60px;
+    width: 80px; 
+    height: 55px;
+
 }
 .navbar a {
     display: block;
@@ -52,7 +56,7 @@ body{
 }
 
 .navbar a:hover{
-    background: #585858;
+    background: #363636;
 }
 
 .header {
@@ -91,7 +95,7 @@ p {
     border: 2px 40px;
     color: #FFFFFF;
     text-decoration: none;
-    background: #9c27b0;
+    background: #D2BC71;
 }
 
 .btn:hover{
@@ -107,7 +111,7 @@ p {
     border: 2px 40px;
     color: #FFFFFF;
     text-decoration: none;
-    background: #585858;
+    background: #363636;
     opacity: .1;
     border-radius: 1rem;
 }
@@ -135,7 +139,9 @@ p {
 
 .sau{
     padding: 30px;
-    background: #1f1d1d;
+    background: #171717;
+    text-align: justify;
+    height: auto;
 }
 
 .box-container{
@@ -148,7 +154,7 @@ p {
 .box-container .box{
     height: 11rem;
     width: 17rem;
-    background: #101010;
+    background: #171717;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
@@ -158,6 +164,7 @@ p {
 .box-container .box:hover{
     color: #FFFFFF;
     background: none;
+    transform: scale(0.8);
 }
 
 .box-container .box i{
@@ -166,15 +173,15 @@ p {
     line-height: 3rem;
     text-align: center;
     border-radius: 50%;
-    color: #FFFFFF;
-    background: #9c27b0;
+    color: #363636;
+    background: #F8E6AD;
     font-size: 2rem;
     margin: 1rem 0;
 }
 
 .box-container .box h3{
     font-size: 20px;
-    color: #9c27b0;
+    color: #F8E6AD;
 }
 
 .box-container .box p{
@@ -184,15 +191,20 @@ p {
 
 .about{
     background: #171717;
+    text-align: justify;
+    height: auto;
 }
 
 .price{
-    background: url(img/Jabon\ de\ Miel.jpg) no-repeat center;
+    background: linear-gradient(rgba(5, 7, 12, 0.404), rgba(5, 7, 12, 0.774)), url(img/Jabon\ de\ Miel.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    height: auto;
+}
 
-    
+.price p{
+    text-align: justify;
 }
 
 .contact{
@@ -201,3 +213,159 @@ p {
     padding-bottom: 0;
 } 
 
+
+
+.footer {
+	background-color: #171717;
+    height: auto;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 3rem;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 30rem;
+	gap: 3rem;
+	justify-items: center;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #ffffff;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: #D2BC71;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.content p {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: #D2BC71;
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eeeeee;
+}
+
+.content button {
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.content button:hover {
+	background-color:#171717;
+	color: #F8E6AD;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+	border-top: 1px solid #d2b495;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
